@@ -1,0 +1,200 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	
+}
+html{
+	scroll-behavior: smooth;
+}
+/*css variable */
+:root {
+	--navbar-height: 59px;
+}
+/* navigation bar */
+#navbar {
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+}
+#logo img {
+	height: 60px;
+	margin: 10px 34px;
+}
+/* #navbar {
+	position: relative;
+} */
+#navbar ul {
+	display: flex;
+	font-family: 'Courgette', cursive;
+}
+#navbar::before {
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.2;
+}
+#navbar ul li {
+	list-style: none;
+	font-size: 1.3rem;
+}
+#navbar ul li a {
+	color: white;
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+#navbar ul li a:hover {
+	color: black;
+	background-color: white;
+}
+/* home section */
+
+#home {
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	height: 665px;
+	justify-content: center;
+	align-items: center;
+}
+#home::before {
+	content: "";
+	background: url('../images/bg2.jpg')no-repeat center/cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 755px;
+	width: 100%;
+	z-index: -1;
+	opacity: 1;
+}
+#home h1 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+
+	font-family: 'Monoton', cursive;
+}
+#home p {
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Courgette', cursive;
+	/* font-family: 'Aladin', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Faster One', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Oleo Script', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Rye', cursive;
+font-family: 'Sail', cursive;
+font-family: 'Satisfy', cursive; */
+}
+/* service section */
+#services {
+	margin: 34px;
+	display: flex;
+}
+#services .box {
+	margin: 6px;
+	border-radius: 26px;
+	padding: 34px;
+	/* border:2px solid red; */
+	background: black;
+	color: white;
+}
+#services .box img {
+	height: 200px;
+	margin: auto;
+	display: block;
+	border-radius: 10px;
+}
+#services .box p {
+	font-family: 'Playball', cursive;
+}
+
+/* client section */
+#client-section {
+	position: relative;
+	height: 344px;
+}
+#client-section::before {
+	content: "";
+	position: absolute;
+	/* background:rgb(31, 25, 25); */
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.4;
+}
+#clients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.client-item {
+	padding: 34px;
+}
+ #clients img {
+	height: 125px;
+} 
+
+/* contact section */
+#contact {
+	position: relative;
+}
+#contact::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+}
+#contact-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-size: 1.5rem;
+}
+#contact-box form {
+	width: 48%;
+}
+#contact-box label {
+	font-size: 1.3rem;
+	font-family: 'Bungee Inline', cursive;
+}
+footer {
+	background: black;
+	color: white;
+	padding: 9px 20px;
+}
+/* utility classes */
+.h-primary {
+	font-family: 'Monoton', cursive;
+	font-size: 3.0rem;
+	padding: 12px;
+}
+.h-secondary {
+	font-family: 'Playball', cursive;
+	font-size: 2.0rem;
+	padding: 12px;
+}
+.center {
+	text-align: center;
+}
